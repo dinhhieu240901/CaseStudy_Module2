@@ -1,0 +1,7 @@
+CageId,Name,MaxAnimals,Employee Id,Clean liness,Cage Type,Height,Deepness
+1,cage 1,10,test,NORMAL,AquaticHabitat,  ,24
+2,cage 2,10,test,NORMAL,AquaticHabitat,  ,20
+3,Aviary caage,10,ZK01,NORMAL,Aviary,4, ,
+4,Aviary cage 2,10,ZK02,NORMAL,Aviary,5, ,
+5,Terrestial cage,10,ZK01,NORMAL,TerrestrialHabitat,4, ,
+6,Teresstrial cage 2,10,ZK02,NORMAL,TerrestrialHabitat,5, ,

@@ -1,0 +1,6 @@
+Supply Id,Name, Price Per Unit,Quantity Available,Supply Type,Data Type
+1,Meat,100.0,960,FoodSupply,MEAT
+2,Fish,100.0,940,FoodSupply,FISH
+3,Vegetables,100.0,960,FoodSupply,VEGETABLES
+4,Insects,100.0,980,FoodSupply,INSECTS
+5,Fruits,100.0,980,FoodSupply,FRUITS

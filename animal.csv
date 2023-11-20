@@ -1,0 +1,13 @@
+Id,Name,Species,Weight,size,age,heal,gender,isHungry,cageId,foodPlanQuantity,foodPlanItem,typeAnimal
+1,tét,test,24.0,24.0,25,GOOD,MALE,true,test2,,,Dolphin
+2,Dolphin1,Dolphin,150.0,8.2,12,GOOD,MALE,true,1,,,Dolphin
+3,Dolphin2,Dolphin,140.0,8.0,10,GOOD,MALE,true,1,,,Dolphin
+4,Lion1,Lion,190.0,1.2,12,GOOD,MALE,true,5,,,Lion
+5,Panda1,Panda,100.0,0.7,6,GOOD,MALE,true,5,,,Panda
+6,Seal1,Hải cẩu,300.0,1.7,15,GOOD,MALE,true,2,,,Seal
+7,Shark1,Shark,2100.0,4.5,20,GOOD,MALE,true,2,,,Shark
+8,Zebra1,Zebra,350.0,1.3,10,GOOD,MALE,true,,,,Zebra
+9,Dolphin3,Dolphin,130.0,7.8,9,GOOD,FEMALE,true,2,,,Dolphin
+10,Eagle2,Eagle,14.0,2.0,4,GOOD,FEMALE,true,3,,,Eagle
+11,Elephant2,Elephant,4800.0,3.1,23,GOOD,FEMALE,true,6,,,Elephant
+12,Lion2,Lion,180.0,1.1,11,GOOD,FEMALE,true,5,,,Lion

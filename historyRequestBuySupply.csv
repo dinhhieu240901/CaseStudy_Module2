@@ -1,0 +1,5 @@
+Id,User Id Request,Supply Id,Amount,Total Money,Status
+7bf38cc2-3e76-4c7c-a494-6e34eb544752,test123,1,20,2000.0,FAIL
+4d76c3e8-1046-426c-84fa-28ac12bf7d47,test123,3,10,1000.0,SUCCESS
+f97a404e-3f95-41aa-a540-783bfcf98e88,test123,1,20,2000.0,SUCCESS
+7bf38cc2-3e76-4c7c-a494-6e34eb544752,test123,1,20,2000.0,FAIL
