@@ -24,7 +24,7 @@ public class MenuManagerEmployee {
             System.out.println("4. Xoá thông tin nhân viên");
             System.out.println("5. Tìm kiếm thông tin nhân viên");
             System.out.println("6. Thanh toán lương cho nhân viên");
-            System.out.println("7. Thoát về Menu chính");
+            System.out.println("7. Quay lại menu");
             Scanner scanner = new Scanner(System.in);
             int inputMenuAnimalSelected = scanner.nextInt();
             switch (inputMenuAnimalSelected) {
@@ -114,7 +114,6 @@ public class MenuManagerEmployee {
             System.out.println("Username hoặc Password không hợp lệ.");
             return getNewEmployee();
         }
-
         switch (inputEmployeeType) {
             case 1:
                 employee = new Employee(name, streetAddress, city, country, gender, age, employeeId, jobPosition, salary, "Zookeeper", username, password, 0);

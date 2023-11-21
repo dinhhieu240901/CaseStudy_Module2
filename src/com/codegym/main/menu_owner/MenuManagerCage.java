@@ -57,7 +57,7 @@ public class MenuManagerCage {
         System.out.println("5. Tìm kiếm chuồng thú theo id");
         System.out.println("6. Xoá thú ra khỏi chuồng.");
         System.out.println("7. Xoá chuồng.");
-        System.out.println("8. Thoát về Menu chính");
+        System.out.println("8. Quay lại menu");
     }
     private void displayCagesInfo() {
         for (Cage cage : cageService.getCages()) {
@@ -146,7 +146,6 @@ public class MenuManagerCage {
             System.out.println("Không tìm thấy chuồng với ID đã cho.");
         }
     }
-
     private void addAnimalToCage(){
         System.out.println("Nhập ID chuồng muốn thêm thú: ");
         String cageId = scanner.next();

@@ -2,12 +2,9 @@ package com.codegym.repository;
 
 
 import com.codegym.model.history.HistoryTransaction;
-import com.codegym.model.history.HistoryType;
 import com.codegym.serializer.ReadHistoryTransactionSerializer;
 
 import java.util.List;
-import java.util.Optional;
-import java.util.concurrent.atomic.AtomicReference;
 
 public class TransactionHistoryRepository {
     private List<HistoryTransaction> historyTransactions;

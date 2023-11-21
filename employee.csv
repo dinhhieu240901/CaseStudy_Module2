@@ -1,9 +1,8 @@
 Employee Id,Name,Street, City,Country,Gender,Age,Job Position,Salary,Role, Username, Password, Total Money
 owner1,Tai,Hn,HN,HN,MALE,22,nguoi,0.0,Owner,tientai24,tientai24,2200.0
 test123,test,test,test,HN,MALE,22,Data123,1000.0,WarehouseManager,Tientai2411!,tientai24,1000.0
-test,test,test,test,test,MALE,12,test,1000.0,Zookeeper,test123,test123,1000.0
+test,test,test,test,test,MALE,12,test,1000.0,WarehouseManager,test123,test123,1000.0
 test,test,test,test,test,MALE,12,test,1000.0,Accountant,test123,test1111,1000.0
-test123,Hiếu,BienHoa,DongNai,VietNam,MALE,22,Accountant,1000.0,Accountant,hieu1234,Hieu@123,1000.0
 ACT01,Hiếu,Biên hÒA,Đồng Nai,Việt Nam,MALE,22,ABC,1000.0,Accountant,hieu123,Hieu@123,1000.0
 ZK01,24,Biên Hòa,Đồng Nai,Việt Nam,MALE,22,Accountant,1000.0,Zookeeper,hieu1234,Hieu@123,1000.0
 ZK02,Hiếu,Biên Hòa,Đồng Nai,Việt Nam,MALE,22,Zookeeper,1000.0,Zookeeper,hieu1456,Hieu@123,1000.0

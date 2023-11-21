@@ -56,7 +56,7 @@ public class MenuManagerAnimal {
             System.out.println("4.Xoá thông tin thú");
             System.out.println("5.Sắp xếp danh sách thú theo tên");
             System.out.println("6.Tìm kiếm thú theo tên");
-            System.out.println("7.Thoát về Menu chính");
+            System.out.println("7. Quay lại menu");
             Scanner scanner = new Scanner(System.in);
             int inputMenuAnimalSelected = scanner.nextInt();
             switch (inputMenuAnimalSelected) {

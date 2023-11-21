@@ -9,7 +9,7 @@ import com.codegym.model.animal.interfaces.TerrestrialAnimal;
 import com.codegym.model.foodplan.FoodPlan;
 import com.codegym.model.supply.enumerations.FoodType;
 
-public class Elephant extends Animal implements  TerrestrialAnimal, Mammal {
+    public class Elephant extends Animal implements  TerrestrialAnimal, Mammal {
     public Elephant(int id, String name, String species, double weight, double size, int age, HealAnimals heal, GenderAnimals gender, FoodPlan foodPlan,String cageId) {
         super(id, name, species, weight, size, age, heal, gender,"Elephant",foodPlan,cageId);
         setFoodType(FoodType.VEGETABLES);

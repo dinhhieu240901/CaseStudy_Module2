@@ -26,6 +26,9 @@ public abstract class Animal implements Serializable, AnimalActions {
     private String typeAnimal;
     private FoodType foodType;
 
+
+
+
     public String getCageId() {
         return cageId;
     }
@@ -86,6 +89,7 @@ public abstract class Animal implements Serializable, AnimalActions {
         this.foodPlan = foodPlan;
         this.isHungry = true;
         this.cageId = cageId;
+
     }
 
     public FoodType getFoodType() {

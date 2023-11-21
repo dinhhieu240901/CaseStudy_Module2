@@ -1,12 +1,10 @@
 package com.codegym.repository;
 
 import com.codegym.model.person.employee.Employee;
-import com.codegym.model.person.employee.Owner;
 import com.codegym.serializer.ReadEmployeeSerializer;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 public class EmployeeRepository {
     private final List<Employee> employees;

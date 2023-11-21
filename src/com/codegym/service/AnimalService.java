@@ -54,6 +54,7 @@ public class AnimalService {
             System.out.println("Không tìm thấy con vật. Vui lòng kiểm tra lại ID.");
         }
     }
+
     public void sortAnimalByName(){
         animalRepository.sortAnimalsByName();
     }

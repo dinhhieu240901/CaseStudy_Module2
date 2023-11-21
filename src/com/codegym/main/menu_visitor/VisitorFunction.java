@@ -1,6 +1,7 @@
 package com.codegym.main.menu_visitor;
 
 import com.codegym.main.Command.Command;
+import com.codegym.model.Cage.Cage;
 import com.codegym.model.animal.Animal;
 import com.codegym.model.person.enumerations.AgeCategory;
 import com.codegym.model.person.enumerations.GenderPerson;
@@ -16,13 +17,12 @@ import com.codegym.service.CageService;
 import com.codegym.service.EmployeeService;
 import com.codegym.service.VisitorService;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class VisitorFunction implements Command {
 
     AnimalService animalService = AnimalService.getAnimalService();
-
-    EmployeeService employeeService = EmployeeService.getEmployeeService();
 
     CageService cageService = CageService.getCageService();
 
@@ -32,8 +32,7 @@ public class VisitorFunction implements Command {
     public void execute() {
         System.out.println("=== MENU KHÁCH THAM QUAN ===");
         System.out.println("1. Đặt vé theo độ tuổi");
-        System.out.println("2. Đặt tour hướng dẫn");
-        System.out.println("3. Thoát về Menu chính");
+        System.out.println("2. Thoát về Menu chính");
         Scanner scanner = new Scanner(System.in);
         int inputMenuManagerCustomerSelected = scanner.nextInt();
         switch (inputMenuManagerCustomerSelected) {
@@ -46,10 +45,7 @@ public class VisitorFunction implements Command {
                 showDetail();
                 break;
             case 2:
-                System.out.println("2. Đặt tour hướng dẫn");
-                break;
-            case 3:
-                System.out.println("3. Thoát về Menu chính");
+                System.out.println("2. Thoát về Menu chính");
                 return;
         }
 
@@ -64,7 +60,8 @@ public class VisitorFunction implements Command {
             System.out.println("2. Xem chi tiết thú");
             System.out.println("3. Thăm chuồng thú");
             System.out.println("4. Thăm chi tiết chuồng thú");
-            System.out.println("5. Quay lại menu");
+            System.out.println("5. Tìm kếm thú theo tên ");
+            System.out.println("6. Quay lại menu");
             Scanner scanner = new Scanner(System.in);
             int inputMenuManagerCustomerSelected = scanner.nextInt();
             switch (inputMenuManagerCustomerSelected) {
@@ -83,7 +80,9 @@ public class VisitorFunction implements Command {
                     animal.eat();
                     break;
                 case 3:
-                    cageService.getCages().stream().forEach(System.out::println);
+                    for (Cage cage : cageService.getCages()) {
+                        System.out.println(cage);
+                    }
                     break;
                 case 4:
                     System.out.println("Cage ID: ");
@@ -91,7 +90,19 @@ public class VisitorFunction implements Command {
                     System.out.println(cageService.findById(cage));
                     break;
                 case 5:
-                    System.out.println("4. Quay lại menu");
+                    System.out.println("Nhập tên thú: ");
+                    String animalName = scanner.next();
+                    List<Animal> foundAnimals = animalService.findByName(animalName);
+                    if (foundAnimals.isEmpty()) {
+                        System.out.println("Không tìm thấy thú.");
+                    } else {
+                        for (Animal foundAnimal : foundAnimals) {
+                            System.out.println(foundAnimal);
+                        }
+                    }
+                    break;
+                case 6:
+                    System.out.println("6. Quay lại menu");
                     return;
 
             }

@@ -149,27 +149,26 @@ public class Cage implements Comparator<Animal>,Habitat {
         return o1.getAge() - o2.getAge();
     }
 
-    @Override
-    public String toString() {
-        StringBuilder animalsString = new StringBuilder();
-        for (Animal animal : animals) {
-            animalsString.append("\n\tID: ").append(animal.getId())
-                    .append(", Name: ").append(animal.getName())
-                    .append(", Species: ").append(animal.getSpecies());
+        @Override
+        public String toString() {
+            StringBuilder animalsString = new StringBuilder();
+            for (Animal animal : animals) {
+                animalsString.append("\n\tID: ").append(animal.getId())
+                        .append(", Name: ").append(animal.getName())
+                        .append(", Species: ").append(animal.getSpecies());
+            }
+            return "Cage{" +
+                    "cageId='" + cageId + '\'' +
+                    ", name='" + name + '\'' +
+                    ", maxAnimals=" + maxAnimals +
+                    ", employeeId='" + employeeId + '\'' +
+                    ", habitat=" + habitat +
+                    ", animals=" + animalsString.toString() +
+                    ", cleanliness=" + cleanliness +
+                    ", employee=" + employee.getName()+
+                    ", cageType='" + cageType + '\'' +
+                    '}';
         }
-        return "Cage{" +
-                "cageId='" + cageId + '\'' +
-                ", name='" + name + '\'' +
-                ", maxAnimals=" + maxAnimals +
-                ", employeeId='" + employeeId + '\'' +
-                ", habitat=" + habitat +
-                ", animals=" + animalsString.toString() +
-                ", cleanliness=" + cleanliness +
-                ", employee=" + employee.getName()+
-                ", cageType='" + cageType + '\'' +
-                '}';
-    }
-
     @Override
     public boolean isCompatible(Animal animal) {
         return false;

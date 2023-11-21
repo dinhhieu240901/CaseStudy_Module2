@@ -2,13 +2,10 @@ package com.codegym.repository;
 
 import com.codegym.model.Cage.Cage;
 import com.codegym.model.animal.Animal;
-import com.codegym.serializer.ReadAnimalSerializer;
 import com.codegym.serializer.ReadCageSerializer;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
-import java.util.stream.Collectors;
 
 public class CageRepository {
     private List<Cage> cages;
